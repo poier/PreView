@@ -1,12 +1,10 @@
-# Note, this site is under construction and will soon be updated!
-
-This site is intended to provide additional material for our CVPR 2018 paper 
+This site is intended to provide code and additional material along with our CVPR 2018 paper 
 
 <h2><center>Learning Pose Specific Representations by Predicting Different Views</center></h2>
 
 <p>
-<center><a href="https://poier.github.io">Georg Poier</a>, 
-<a href="https://www.tugraz.at/institute/icg/research/team-bischof/lrs/people/schinagl">David Schinagl</a>, 
+<center><a href="https://poier.github.io">Georg Poier</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.tugraz.at/institute/icg/research/team-bischof/lrs/people/schinagl">David Schinagl</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://www.tugraz.at/institute/icg/research/team-bischof/people/team-about/horst-bischof">Horst Bischof</a></center>
 </p>
 
@@ -15,15 +13,14 @@ This site is intended to provide additional material for our CVPR 2018 paper
 
 <p>
 <center>
-<a href="https://arxiv.org/">[Paper (soon on arXiv)]</a> 
-<a href="">[Code+Data (coming soon)]</a> 
-<a href="">[Reviews]</a> 
-<a href="">[Rebuttal]</a> 
+<a href="./documents/poier2018cvpr_preview.pdf">[Paper (pdf)]</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="./documents/poier2018cvpr_preview_supplemental.pdf">[Supplemental (pdf)]</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="">[Code+Data (coming soon)]</a>
 </center>
 </p>
 
 
-Some summarization and results from the paper.
+Some excerpts and results from the paper:
 
 ### Sketch for learning a pose specific representation from unlabeled data
 ![Sketch for learning a pose specific representation from unlabeled data](./images/idea_sketch.png)
@@ -49,7 +46,7 @@ the hand's appearance from any viewpoint can be approximated.
 To exploit this observation, we train a model that -- given input from one view -- 
 estimates a latent representation, which is trained to be predictive
 for the appearance of the object when captured from another viewpoint.
-That is, the only necessary supervision is the second view.
+Thus, the only necessary supervision is the second view.
 The training process of this model reveals an implicit pose representation in the 
 latent space.
 Importantly, at test time the pose representation can be inferred using only a single view.
@@ -57,13 +54,14 @@ In qualitative and quantitative experiments we show that the learned representat
 capture detailed pose information.
 Moreover, when training the proposed method jointly with labeled and unlabeled data, 
 it consistently surpasses the performance of its fully supervised counterpart,
-while reducing the amount of needed labeled samples by an order of magnitude.
+while reducing the amount of needed labeled samples by at least one order of magnitude.
 
 
 ### Results
 
 #### View Predictions
-Examples for generated views from the NYU validation set.
+Examples for generated views from the NYU validation set 
+(*i.e.*, the results of our "proxy task").
 
 Input views:
 
@@ -75,13 +73,17 @@ and the corresponding predictions from our method
 ![Prediction for different view](./images/test_sample_estimate_preview_4x8.png)
 
 #### Analysis of the latent representation
-We visualize the nearest neighbors in the latent representation space. 
-Query samples are shown in the marked leftmost column:
+The actual intention of our method is that the training process reveals 
+a latent representation, which captures the pose of the hand.
+One possibility to analyze the latent representation is to visualize 
+the nearest neighbors in the latent space. 
+In the following image query samples are shown in the marked leftmost column
+and the eight nearest neighbors of each query are shown in the same row:
 
 ![Nearest neighbors in the latent space learned with our method](./images/viz_query_and_nn_4x9_preview.png)
 
-Comparison to the nearest neighbors in the latent space when learned with an 
-autoencoder instead of our method:
+Below we show the nearest neighbors in the latent space when 
+**learned with an autoencoder (instead of our method)** for comparison:
 
 ![Nearest neighbors in the latent space learned with an autoencoder](./images/viz_query_and_nn_4x9_autoenc.png)
 
@@ -106,7 +108,7 @@ Bibtex:
 @inproceedings{Poier2018cvpr_preview,  
   author = {Georg Poier and David Schinagl and Horst Bischof},  
   title = {Learning Pose Specific Representations by Predicting Different Views},  
-  booktitle = {% raw %}{{Proc. Conf. on Computer Vision and Pattern Recognition (CVPR)}}{% endraw %},  
+  booktitle = {% raw %}{{Proc. IEEE/CVF Conf. on Computer Vision and Pattern Recognition (CVPR)}}{% endraw %},  
   note = {(to be published)},  
   year = {2018}
 }
