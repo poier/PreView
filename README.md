@@ -1,1 +1,2 @@
-Code coming soon ([Project page](https://poier.github.io/PreView/))
+Code coming soon... (within next days)  
+[Project page](https://poier.github.io/PreView/)
