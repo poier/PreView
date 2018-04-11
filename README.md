@@ -44,9 +44,6 @@ from config.config_data_icg import args_data
 It will log the training and validation error using crayon 
 (see [https://github.com/torrvision/crayon](https://github.com/torrvision/crayon)),
 and output intermediate images and final results in the `results` folder.
-For training with the additional adversarial loss just change the training type
-using the corresponding command-line parameter. 
-That is, call `python main_run.py --training-type 2` instead.
 When using the MV-hands dataset you need to change the camera view, which 
 is to be predicted, by adding `--output-cam-ids-train 2` to the call.
 To change further settings you can adapt the respective configuration files 
@@ -54,6 +51,19 @@ in the `config` folder or via the command-line
 (see `python main_run.py --help` for details). 
 The default settings should be fine 
 to reproduce the results from the paper, however.
+
+#### Train with adversarial loss
+For training with the additional adversarial loss just change the training type
+using the corresponding command-line parameter. 
+That is, call `python main_run.py --training-type 2` instead.
+However, note that with this additional loss we merely obtained similar results 
+for the cost of additional training time (see the paper for details).
+
+#### Use pre-trained model
+In the `results` folder you find a pre-trained model.
+You can generate results using this one by calling:
+
+    python main_run.py --model-filepath </path/to/model.mdl> --no-train
 
 
 ## Requirements
