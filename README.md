@@ -13,13 +13,13 @@ This site is intended to provide code and additional material along with our CVP
 
 <p>
 <center>
-<a href="./documents/poier2018cvpr_preview.pdf">[Paper (pdf)]</a>&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="./documents/poier2018cvpr_preview_supplemental.pdf">[Supplemental (pdf)]</a>&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://github.com/poier/PreView">[Code (coming soon)]</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://arxiv.org/abs/1804.03390">[Paper (arxiv)]</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/poier/PreView">[Code]</a>&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://files.icg.tugraz.at/f/a190309bd4474ec2b13f/">[Data]</a>
 </center>
 </p>
 
+---
 
 Some excerpts and results from the paper:
 
@@ -33,6 +33,7 @@ The error of the view prediction is used as feedback,
 enforcing the latent representation to capture pose specific information
 without requiring labeled data.
 
+---
 
 ### Abstract
 The labeled data required to learn pose estimation for articulated objects 
@@ -57,6 +58,7 @@ Moreover, when training the proposed method jointly with labeled and unlabeled d
 it consistently surpasses the performance of its fully supervised counterpart,
 while reducing the amount of needed labeled samples by at least one order of magnitude.
 
+---
 
 ### Results
 
@@ -96,6 +98,7 @@ We compare the error of purely supervised training with the error of our method
 
 See more results in the paper and supplemental material.
 
+---
 
 ### Citation
 If you can make use of this work, please cite:
@@ -115,6 +118,7 @@ Bibtex:
 }
 ```
 
+---
 
 ### Acknowledgements
 We thank the anonymous reviewers for their effort and valuable feedback, 
