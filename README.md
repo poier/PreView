@@ -5,6 +5,8 @@ This repository contains the code for the semi-supervised method we proposed in:
 Georg Poier, David Schinagl and Horst Bischof.  
 In *Proc. CVPR* (to be published), 2018. ([Project Page](https://poier.github.io/PreView/)).
 
+---
+
 ![Sketch for learning a pose specific representation from unlabeled data](./doc/idea_sketch.png)  
 We learn to predict a low-dimensional latent representation and, subsequently,
 a different view of the input, 
