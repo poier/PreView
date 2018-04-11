@@ -19,6 +19,9 @@ This site is intended to provide code and additional material along with our CVP
 </center>
 </p>
 
+[[Paper as webpage]](https://www.arxiv-vanity.com/papers/1804.03390/) 
+provided by arxiv-vanity.com (not perfect but probably still easier to read on some devices).
+
 ---
 
 Some excerpts and results from the paper:
