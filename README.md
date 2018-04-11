@@ -1,11 +1,11 @@
 # Learning Pose Specific Representations by Predicting Different Views
 This repository contains the code for the semi-supervised method we proposed in:  
 
-[**Learning Pose Specific Representations by Predicting Different Views**](todo.arxiv.com)  
+[**Learning Pose Specific Representations by Predicting Different Views**](https://arxiv.org/abs/1804.03390)  
 Georg Poier, David Schinagl and Horst Bischof.  
 In *Proc. CVPR* (to be published), 2018. ([Project Page](https://poier.github.io/PreView/)).
 
-![Sketch for learning a pose specific representation from unlabeled data](./images/idea_sketch.png)  
+![Sketch for learning a pose specific representation from unlabeled data](./doc/idea_sketch.png)  
 We learn to predict a low-dimensional latent representation and, subsequently,
 a different view of the input, 
 *solely* from the latent representation.
@@ -46,7 +46,7 @@ For training with the additional adversarial loss just change the training type
 using the corresponding command-line parameter. 
 That is, call `python main_run.py --training-type 2` instead.
 When using the MV-hands dataset you need to change the camera view, which 
-is to be predicted by adding `--output-cam-ids-train 2` to the call.
+is to be predicted, by adding `--output-cam-ids-train 2` to the call.
 To change further settings you can adapt the respective configuration files 
 in the `config` folder or via the command-line 
 (see `python main_run.py --help` for details). 
@@ -77,7 +77,7 @@ Bibtex:
 @inproceedings{Poier2018cvpr_preview,  
   author = {Georg Poier and David Schinagl and Horst Bischof},  
   title = {Learning Pose Specific Representations by Predicting Different Views},  
-  booktitle = {% raw %}{{Proc. IEEE/CVF Conf. on Computer Vision and Pattern Recognition (CVPR)}}{% endraw %},  
+  booktitle = {{Proc. IEEE/CVF Conf. on Computer Vision and Pattern Recognition (CVPR)}},  
   note = {(to be published)},  
   year = {2018}
 }
