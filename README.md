@@ -60,7 +60,7 @@ However, note that with this additional loss we merely obtained similar results
 for the cost of additional training time (see the paper for details).
 
 #### Use pre-trained model
-In the `results` folder you find a pre-trained model.
+In `./source/results` you find a model pre-trained on the NYU dataset.
 You can generate results using this one by calling:
 
     python main_run.py --model-filepath </path/to/model.mdl> --no-train
