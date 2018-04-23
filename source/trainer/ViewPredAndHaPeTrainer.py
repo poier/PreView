@@ -194,7 +194,7 @@ class ViewPredAndHaPeTrainer(object):
                     100. * (batch_idx+1) / len(self.train_loader),
                     loss.data[0]))
                 self.log.add_scalar_value("train-loss", 
-                                          loss.data[0] / len(data_input), 
+                                          loss.data[0], 
                                           wall_time=time.clock(), step=step)
     
         print('====> Epoch: {} Average loss: {:.4f}'.format(

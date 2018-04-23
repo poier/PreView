@@ -249,7 +249,7 @@ class AdversarialViewPredAndHaPeTrainer(object):
                     errD.data[0], loss.data[0], D_x, D_G_z1, D_G_z2))
                 step = (epoch-1) * len(self.train_loader) + batch_idx
                 self.log.add_scalar_value("train-loss", 
-                                          loss.data[0] / len(data_input), 
+                                          loss.data[0], 
                                           wall_time=time.clock(), step=step)
                 self.log.add_scalar_value("prediction-real", D_x, 
                                           wall_time=time.clock(), step=step)
