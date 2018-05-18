@@ -32,6 +32,9 @@ args.num_features = 64
 # Use the model with best val. error (over epochs)? if False last model is used
 args.do_use_best_model = True
 
+# How many (CPU) workers for loading data
+args.num_loader_workers = 5
+
 # Output parameters
 args.do_save_model = True
 args.save_model_epoch_interval = 10

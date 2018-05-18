@@ -52,7 +52,7 @@ def create_dataloader(loader_type, args_data, do_use_gpu):
     Create a data loader according to the parameters
     """
     
-    kwargs = {'num_workers': 5, 'pin_memory': True} if do_use_gpu else {}
+    kwargs = {'num_workers': args_data.num_loader_workers, 'pin_memory': True} if do_use_gpu else {}
     
     if args_data.dataset_type == DatasetType.NYU:
         if loader_type == LoaderMode.TRAIN:

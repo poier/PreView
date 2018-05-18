@@ -550,7 +550,7 @@ def loadSingleSampleNyu(basepath, seqName, index, rng,
             try:
                 dpt = cPickle.load(f)
             except:
-                print("Data file exists but failed to laod. File: {}".format(pickleCacheFile))
+                print("Data file exists but failed to load. File: {}".format(pickleCacheFile))
                 raise
         
     else:
