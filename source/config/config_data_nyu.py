@@ -33,7 +33,7 @@ args_data.dataset_type = DatasetType.NYU
 args_data.nyu_data_basepath = "/path/to/NyuDataset/original_data"
 
 # If a "cache" should be used (=> faster loading/training), change the path
-args_data.use_pickled_cache = True
+args_data.use_pickled_cache = False
 args_data.nyu_data_basepath_pickled = "/path/to/NyuDataset/original_data_pickled"
 
 args_data.input_cam_id_train = 1

@@ -45,7 +45,7 @@ args_data.dataset_type = DatasetType.ICG
 args_data.base_path_true = "/path/to/mvhands/data/"
 
 # Don't change this path (its used for simplicity, since there are absolute paths in textfiles)
-args_data.base_path_in_files = "/media/seagatehdd/ICG/Datasets/HandPose/IGT/"
+args_data.base_path_in_files = "/media/seagatehdd/ICG/Datasets/HandPose/IGT"
 
 # Unlabeled data
 args_data.icg_unlabeled_files_list = [

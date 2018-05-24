@@ -223,7 +223,7 @@ class AdversarialViewPredAndHaPeTrainer(object):
             # Update generator
             optimizer.zero_grad()
             target_d_v = Variable(target_d.fill_(label_real_d))    # targets for generated samples are "real" for generator cost
-            # fprop through discriminator on generated samples again but want to backprop through generator also this time, i.e., no detach()
+            # fprop through discriminator on generated samples again but want to backprop through generator this time, i.e., no detach()
             # detach the joints_pred for this call of discriminator (we don't want to propagate through the joint pos., do we?, the joint positions would probably just be changed to match the generated image!?)
             data_in_discr = self.get_discriminator_input(view_pred, 
                                                          data_input,

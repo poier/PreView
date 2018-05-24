@@ -268,7 +268,7 @@ class IcgHandPoseMultiViewDataset(Dataset):
                                 ])
                 
         t_1 = time.clock()
-        print("  labeled: read {} sample(s) from {} file(s) in {}sec.".format(
+        print("  labeled: found {} sample(s) in {} file(s) in {}sec.".format(
             len(data), len(filelist), (t_1 - t_0)))
         
         return data
@@ -313,7 +313,7 @@ class IcgHandPoseMultiViewDataset(Dataset):
                                 ])
         
         t_1 = time.clock()
-        print("  unlabeled: read {} sample(s) from {} file(s) in time: {}".format(
+        print("  unlabeled: found {} sample(s) in {} file(s) in {}sec.".format(
             len(data), len(filelist), (t_1 - t_0)))
         
         return data

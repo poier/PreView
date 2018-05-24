@@ -52,6 +52,30 @@ in the `config` folder or via the command-line
 The default settings should be fine 
 to reproduce the results from the paper, however.
 
+#### Training/Testing speed
+In our case, loading of the data is the bottleneck. 
+Hence, it's very beneficial if the data is stored on a disk with fast access times (e.g., SSD).
+Several workers are concurrently loading (and pre-processing) data samples.
+The number of workers can be changed by adjusting `args.num_loader_workers` 
+in `config/config.py`.
+
+#### Faster training/testing on NYU dataset
+We use binary files to speed up training/testing for the NYU dataset. 
+The binary files can be loaded faster, which will usually yield a significant 
+speed up for training and testing. 
+To make use of the binary files, you need to set `args_data.use_pickled_cache = True` 
+in `config/config_data_nyu.py`.  
+Additionally, it's probably the best/easiest to remove the 
+`WeightedRandomSampler` for a single epoch the first time you use the binary cache files.
+This is to ensure that the files will be written properly. 
+To do so, e.g., just comment out the `sampler` keyword argument at the 
+creation of the `DataLoader` in `data/LoaderFactory.py`, 
+train for one epoch (e.g., using command-line parameter `--epoch 1`), 
+and uncomment the `sampler` again. 
+Currently, the `sampler` creation can be found in the lines 97-99 of `data/LoaderFactory.py`.
+(And/Or use only a single worker to load the data 
+using `args.num_loader_workers` in `config/config.py`.)
+
 #### Train with adversarial loss
 For training with the additional adversarial loss just change the training type
 using the corresponding command-line parameter. 
@@ -74,7 +98,15 @@ To run the code you can, e.g., install the following requirements:
  * enum34
  * matplotlib
  * scipy
- * pycrayon
+ * [pycrayon](https://github.com/torrvision/crayon)
+
+### pycrayon
+The code sends the data to port 8889 of "localhost". 
+That is, you could start the server exactly as in the usage example in the 
+[crayon README](https://github.com/torrvision/crayon/blob/master/README.md) 
+(i.e., by calling `docker run -d -p 8888:8888 -p 8889:8889 --name crayon alband/crayon`).
+See [https://github.com/torrvision/crayon](https://github.com/torrvision/crayon) 
+for details.
 
 
 ## Citation

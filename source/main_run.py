@@ -48,7 +48,9 @@ import os.path
 from config.config import args
 # Data specific parameters
 from config.config_data_nyu import args_data
+# Uncomment the following line to use the MV-hands dataset
 #from config.config_data_icg import args_data
+
 # Merge different configuration parameters into single object
 args.__dict__ = dict(args.__dict__.items() + args_data.__dict__.items())
 
