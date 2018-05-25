@@ -70,7 +70,7 @@ Additionally, it's probably the best/easiest to remove the
 This is to ensure that the files will be written properly. 
 To do so, e.g., just comment out the `sampler` keyword argument at the 
 creation of the `DataLoader` in `data/LoaderFactory.py`, 
-train for one epoch (e.g., using command-line parameter `--epoch 1`), 
+train for one epoch (e.g., using command-line parameter `--epochs 1`), 
 and uncomment the `sampler` again. 
 Currently, the `sampler` creation can be found in the lines 97-99 of `data/LoaderFactory.py`.
 (And/Or use only a single worker to load the data 
