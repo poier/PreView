@@ -1,4 +1,4 @@
-This site is intended to provide code and additional material along with our CVPR 2018 paper 
+This site is intended to provide code and additional material along with our paper about 
 
 <h2><center>Learning Pose Specific Representations by Predicting Different Views</center></h2>
 
@@ -8,8 +8,15 @@ This site is intended to provide code and additional material along with our CVP
 <a href="https://www.tugraz.at/institute/icg/research/team-bischof/people/team-about/horst-bischof">Horst Bischof</a></center>
 </p>
 
+<p>
 <center>Graz University of Technology</center>  
 <center>Austria</center>
+</p>
+
+<p>
+<center>In CVPR 2018</center>  
+<center>(spotlight paper)</center>
+</p>
 
 <p>
 <center>
@@ -126,7 +133,9 @@ Bibtex:
 ### Acknowledgements
 We thank the anonymous reviewers for their effort and valuable feedback, 
 Samuel Schulter, Peter Roth, Michael Opitz and Horst Possegger 
-for feedback on an early draft of this manuscript, 
+for feedback on an early draft of this manuscript,
+Chengde Wan for his responsiveness regarding their implementation of 
+[[Crossing Nets]](https://arxiv.org/abs/1702.03431),
 Martin Oswald, Andreas Bean and colleagues at IGT Unterpremstätten 
 for the fruitful cooperation and lending their hands for the dataset, and
 Anna Micheler-Hofer, Stefan Ainetter and Florian Ziessler 
