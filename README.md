@@ -21,6 +21,7 @@ This site is intended to provide code and additional material along with our pap
 <p>
 <center>
 <a href="https://arxiv.org/abs/1804.03390">[Paper (arxiv)]</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="documents/poier2018cvpr_preview_poster.pdf">[Poster]</a>&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://github.com/poier/PreView">[Code]</a>&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://files.icg.tugraz.at/f/a190309bd4474ec2b13f/">[Data]</a>
 </center>
