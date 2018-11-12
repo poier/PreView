@@ -116,7 +116,7 @@ If you can make use of this work, please cite:
 
 Learning Pose Specific Representations by Predicting Different Views.  
 Georg Poier, David Schinagl and Horst Bischof.  
-In *Proc. CVPR* (to be published), 2018.
+In *Proc. CVPR*, 2018.
 
 Bibtex:
 ```
@@ -124,7 +124,6 @@ Bibtex:
   author = {Georg Poier and David Schinagl and Horst Bischof},  
   title = {Learning Pose Specific Representations by Predicting Different Views},  
   booktitle = {% raw %}{{Proc. IEEE/CVF Conf. on Computer Vision and Pattern Recognition (CVPR)}}{% endraw %},  
-  note = {(to be published)},  
   year = {2018}
 }
 ```
