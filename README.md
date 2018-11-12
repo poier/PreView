@@ -3,7 +3,7 @@ This repository contains the code for the semi-supervised method we proposed in:
 
 [**Learning Pose Specific Representations by Predicting Different Views**](https://arxiv.org/abs/1804.03390)  
 Georg Poier, David Schinagl and Horst Bischof.  
-In *Proc. CVPR* (to be published), 2018. ([Project Page](https://poier.github.io/PreView/)).
+In *Proc. CVPR*, 2018. ([Project Page](https://poier.github.io/PreView/)).
 
 ---
 
@@ -122,7 +122,7 @@ If you can make use of this work, please cite:
 
 Learning Pose Specific Representations by Predicting Different Views.  
 Georg Poier, David Schinagl and Horst Bischof.  
-In *Proc. CVPR* (to be published), 2018.
+In *Proc. CVPR*, 2018.
 
 Bibtex:
 ```
@@ -130,7 +130,6 @@ Bibtex:
   author = {Georg Poier and David Schinagl and Horst Bischof},  
   title = {Learning Pose Specific Representations by Predicting Different Views},  
   booktitle = {{Proc. IEEE/CVF Conf. on Computer Vision and Pattern Recognition (CVPR)}},  
-  note = {(to be published)},  
   year = {2018}
 }
 ```
