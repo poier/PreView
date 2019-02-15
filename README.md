@@ -1,3 +1,5 @@
+> *Note, we used the idea implemented here in our follow-up work to achieve state-of-the art results with only about 1% of the labeled real samples used by other works. See [code](https://github.com/poier/murauer) and [additional material](https://poier.github.io/murauer/)*.
+
 # Learning Pose Specific Representations by Predicting Different Views
 This repository contains the code for the semi-supervised method we proposed in:  
 
