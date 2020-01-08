@@ -20,13 +20,15 @@ This site is intended to provide code and additional material along with our pap
 
 <p>
 <center>
-<a href="https://arxiv.org/abs/1804.03390">[Paper (arxiv)]</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Poier_Learning_Pose_Specific_CVPR_2018_paper.pdf">[Paper]</a>&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="documents/poier2018cvpr_preview_poster.pdf">[Poster]</a>&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://github.com/poier/PreView">[Code]</a>&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://files.icg.tugraz.at/f/a190309bd4474ec2b13f/">[Data]</a>
 </center>
 </p>
 
+[[Paper & Supp. (arxiv)]](https://arxiv.org/abs/1804.03390)  
+[[Paper (IEEE Xplore; original IEEE version)]](https://ieeexplore.ieee.org/document/8578112)  
 [[Paper as webpage]](https://www.arxiv-vanity.com/papers/1804.03390/) 
 provided by arxiv-vanity.com (not perfect but probably still easier to read on some devices).
 
